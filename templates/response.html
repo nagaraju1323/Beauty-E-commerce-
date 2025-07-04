@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You - Moon Light Beauty Clinic</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body class="response-body">
+  <section class="response-message">
+    <h1>Thank You!</h1>
+    <p class="message-details">
+      Your message has been sent successfully.<br>
+      Our team will be in touch with you soon!
+    </p>
+    <a href="{{ url_for('home') }}" class="btn-home">← Back to Home</a>
+  </section>
+</body>
+</html>

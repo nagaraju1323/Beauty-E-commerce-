@@ -1,0 +1,42 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Moon Light Beauty Clinic</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="about-container">
+    <h1>About Us</h1>
+    <p class="tagline">Feel Beautiful, Look Confident</p>
+
+    <div class="about-section">
+      <h2>Who We Are</h2>
+      <p>At <strong>Moon Light Beauty Clinic</strong>, beauty isn’t just our business—it’s our passion. We offer a serene escape where self-care meets style, with a team of skilled professionals dedicated to bringing out your natural charm.</p>
+    </div>
+
+    <div class="about-section">
+      <h2>What We Offer</h2>
+      <ul>
+        <li>Tailored consultations to suit every personality</li>
+        <li>Luxurious care in a hygienic and comfortable setting</li>
+        <li>Haircuts, skin treatments, grooming & more</li>
+      </ul>
+    </div>
+
+    <div class="about-section">
+      <h2>Our Promise</h2>
+      <p>Expect warmth, skill, and a touch of glamour every time. We're not just enhancing appearances—we're nurturing confidence.</p>
+      <blockquote>“Helping you shine, one style at a time.”</blockquote>
+    </div>
+
+    <div class="back-home">
+    <a href="{{ url_for('home') }}" class="btn-home">← Back to Home</a>
+    </div>
+
+  </section>
+</body>
+</html>

@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="services-section">
+    <h2 class="drop-heading" style="color: aliceblue;">
+        <span>E</span><span>x</span><span>p</span><span>l</span><span>o</span><span>r</span><span>e</span>
+        <span> </span>
+        <span>O</span><span>u</span><span>r</span>
+        <span> </span>
+        <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+    </h2>
+
+    <div class="card-grid">
+
+        <div class="service-card">
+            <div class="img-wrapper">
+                <img src="{{ url_for('static', filename='images/haircut-men.jpg') }}" alt="Hair Styling">
+            </div>
+            <h3>💇 Hair Styling (Mens)</h3>
+            <p style="color: black;">Modern cuts, texture treatments, and elegant hairdos tailored to your vibe.</p>
+            <div class="service-meta">
+                <br><span class="price">Price : ₹249</span>
+                <span class="duration">Time : 30 mins</span>
+            </div>
+            <a href="/booking" class="btn-book">Book Now</a>
+        </div>
+
+        <div class="service-card">
+            <div class="img-wrapper">
+                <img src="{{ url_for('static', filename='images/haircut-women.jpg') }}" alt="Hair Styling">
+            </div>
+            <h3>💇 Hair Styling (Womens)</h3>
+            <p style="color: black;">Trendy textures, sleek finishes, and personalized cuts with finesse.</p>
+            <div class="service-meta">
+                <span class="price">Price : ₹249</span>
+                <span class="duration">Time : 40 mins</span>
+            </div>
+            <a href="/booking" class="btn-book">Book Now</a>
+        </div>
+
+        <div class="service-card">
+            <div class="img-wrapper">
+                <img src="{{ url_for('static', filename='images/facial-men.jpg') }}" alt="Facial Therapy">
+            </div>
+            <h3>🌸 Facial Glow Therapy (Mens)</h3>
+            <p style="color: black;">Hydration boost, pore refining, and glow restoration in one session.</p>
+            <div class="service-meta">
+                <span class="price">Price : ₹499</span>
+                <span class="duration">Time : 40 mins</span>
+            </div>
+            <a href="/booking" class="btn-book">Book Now</a>
+        </div>
+
+        <div class="service-card">
+            <div class="img-wrapper">
+                <img src="{{ url_for('static', filename='images/facial-women.jpg') }}" alt="Facial Therapy">
+            </div>
+            <h3>🌸 Facial Glow Therapy (Womens)</h3>
+            <p style="color: black;">Advanced skin therapy to unveil your natural radiance and softness.</p>
+            <div class="service-meta">
+                <span class="price">Price : ₹499</span>
+                <span class="duration">Time : 45 mins</span>
+            </div>
+            <a href="/booking" class="btn-book">Book Now</a>
+        </div>
+
+        <div class="service-card">
+            <div class="img-wrapper">
+                <img src="{{ url_for('static', filename='images/manicure.jpg') }}" alt="Manicure">
+            </div>
+            <h3>💅 Manicure</h3>
+            <p style="color: black;">Nail shaping, cuticle care, and glossy finishes with artistic flair.</p>
+            <br><div class="service-meta">
+                <span class="price">Price : ₹499</span>
+                <span class="duration">Time : 30 mins</span>
+            </div>
+            <a href="/booking" class="btn-book">Book Now</a>
+        </div>
+
+        <div class="service-card">
+            <div class="img-wrapper">
+                <img src="{{ url_for('static', filename='images/pedicure.jpg') }}" alt="Pedicure">
+            </div>
+            <h3>💅 Pedicure</h3>
+            <p style="color: black;">Foot spa, nail shaping, exfoliation, and massage for freshness.</p>
+            <br><div class="service-meta">
+                <span class="price">Price : ₹799</span>
+                <span class="duration">Time : 35 mins</span>
+            </div>
+            <a href="/booking" class="btn-book">Book Now</a>
+        </div>
+
+        <div class="service-card">
+            <div class="img-wrapper">
+                <img src="{{ url_for('static', filename='images/bridal.jpg') }}" alt="Bridal Package">
+            </div>
+            <h3>👰 Bridal Package</h3>
+            <p style="color: black;">Full bridal styling with makeup, hair, skincare & glow therapy.</p>
+            <div class="service-meta">
+                <span class="price">Price : ₹9999</span>
+                <span class="duration">Time : 3 hrs</span>
+            </div>
+            <a href="/booking" class="btn-book">Book Now</a>
+        </div>
+
+        <div class="service-card">
+            <div class="img-wrapper">
+                <img src="{{ url_for('static', filename='images/groom.jpg') }}" alt="Groom Package">
+            </div>
+            <h3>👰 Groom Package</h3>
+            <p style="color: black;">Premium grooming with facials, hairstyling, and custom touch-ups.</p>
+            <div class="service-meta">
+                <span class="price">Price : ₹4999</span>
+                <span class="duration">Time : 2.5 hrs</span>
+            </div>
+            <a href="/booking" class="btn-book">Book Now</a>
+        </div>
+
+        <div class="service-card">
+            <div class="img-wrapper">
+                <img src="{{ url_for('static', filename='images/body-spa.jpg') }}" alt="Body Spa">
+            </div>
+            <h3>🧖‍♀️ Body Spa</h3>
+            <p style="color: black;">Aromatherapy and massage treatments that deeply relax and revive.</p><br><br><br>
+            <div class="service-meta">
+                <span class="price">Price : ₹1999</span>
+                <span class="duration">Time : 60 mins</span>
+            </div>
+            <a href="/booking" class="btn-book">Book Now</a>
+        </div>
+
+        <div class="service-card">
+            <div class="img-wrapper">
+                <img src="{{ url_for('static', filename='images/hair-color.jpg') }}" alt="Hair Coloring">
+            </div>
+            <h3>🎨 Hair Coloring</h3>
+            <p style="color: black;">Professional hair coloring services featuring vibrant shades, expert techniques, and long-lasting results tailored to your unique style.</p>
+            <div class="service-meta">
+                <span class="price">Price : ₹699</span>
+                <span class="duration">Time : 40 mins</span>
+            </div>
+            <a href="/booking" class="btn-book">Book Now</a>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

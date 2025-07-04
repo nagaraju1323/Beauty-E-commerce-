@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Moon Light Beauty Clinic</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body class="contact-body">
+
+  <section class="contact-container">
+    <h1>Get in Touch</h1>
+    <p class="contact-tagline">We’d love to hear from you. Reach out and let’s glow together.</p>
+
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Your name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="+91-XXXXXXXXXX" />
+      </div>
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+      </div>
+      <a href="{{ url_for('response') }}" class="btn">Send Message</a>
+
+
+    </form>
+
+    <div class="contact-info">
+      <p><strong>Phone:</strong> +91-1234567890</p>
+      <p><strong>Email:</strong> contact@moonlightbeauty.in</p>
+      <p><strong>Location:</strong> Tadepalligudem, Andhra Pradesh</p>
+    </div>
+  </section>
+
+</body>
+</html>
