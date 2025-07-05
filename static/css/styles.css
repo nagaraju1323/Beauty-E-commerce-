@@ -574,3 +574,18 @@ input:focus, textarea:focus {
   color: #ddd;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  margin-top: auto;
+}
